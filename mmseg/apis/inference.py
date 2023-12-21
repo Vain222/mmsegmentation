@@ -171,9 +171,9 @@ def show_result_pyplot(model: BaseSegmentor,
         vis_backends=[dict(type='LocalVisBackend')],
         save_dir=save_dir,
         alpha=opacity)
-    visualizer.dataset_meta = dict(
-        classes=model.dataset_meta['classes'],
-        palette=model.dataset_meta['palette'])
+    # visualizer.dataset_meta = dict(
+    #     classes=model.dataset_meta['classes'],
+    #     palette=model.dataset_meta['palette'])
     visualizer.add_datasample(
         name=title,
         image=image,
